@@ -4,6 +4,6 @@ This repository includes concepts and ideas related to Value Units. Currently we
 
 [White Paper](WHITEPAPER.md)
 
-# Value Units Foundation
+# Foundation
 
 The Value Units Foundation is responsible for coordinating and promoting Value Units.
