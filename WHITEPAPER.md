@@ -636,7 +636,7 @@ Start receiving applications to be a LE, LPMD, LD, LCA or miners.
 
 **LD**: Licensed Depositary
 
-**LCA**: Licensed Emitter
+**LE**: Licensed Emitter
 
 **LPMD**: Licensed Precious Metal Dealer
 
