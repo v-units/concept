@@ -1,5 +1,5 @@
 # Whitepaper
-Version 0.9 (04.01.2017)
+Version 0.9 (04.01.2018)
 
 ## Pending Tasks
 
