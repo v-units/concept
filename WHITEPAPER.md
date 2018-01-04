@@ -31,6 +31,7 @@ Version 0.9 (04.01.2017)
 - [References](#references)
 
 <a name="introduction"/>
+
 ## Introduction
 
 In this technology and media-driven age, the stratospheric rise of cryptocurrencies, electronic currencies which are decentralised, anonymous, and freely tradable, is not surprising. Currencies such as Bitcoin and Ethereum have demonstrated that it is possible to use the internet, now ubiquitous and fast in many countries, to make a decentralised value-transfer system which is virtually free to use and can be shared across the world at very fast speeds. It can seem that there is an ideological gap between hard-asset investors, such as those preferring to invest in precious metals such as gold and silver, and the early adopters of electronic currencies. However, there are many similarities between these two currencies, such as the finite supply (both precious metals and most cryptocurrencies need to be mined and are limited) and durability (both of these value-storage methods retain their value almost indefinitely). The time is therefore ripe for a cryptocurrency based on precious metals, retaining the security of the latter, while adding the flexibility of an electronic currency.
@@ -38,6 +39,7 @@ In this technology and media-driven age, the stratospheric rise of cryptocurrenc
 Value Units, is such a currency, based on precious metals which represent the Value Basket (the book value of the cryptocurrency). Additionally to this most iconic feature, Value Units want to provide other distinct capabilities, by taking the best approaches of other cryptocurrencies and combining them with new breakthrough ideas to build the best available cryptocurrency in the market.
 
 <a name="overview"/>
+
 ## Overview
 
 The Value Units Foundation (VUF) has been working for month in designing a first class unique cryptocurrency that offer many interesting and innovative features that can't be found in other alternatives in the diverse cryptocurrency world. Value Units (vUnits) besides being a currency system will have a governance system included in the blockchain that will allow anyone holding vUnits to participate and help shaping the future of Value Units. The VUF will premine 100'000 Value Shares (vShares) which will be distributed to it's members and will be used for monitoring the correct operation of the system. Most proposals are initiated by the VUF but need to be approved by the majority of vUnits holders before being enacted. Most vUnits on the other hand are emitted by depositing precious metals into the licensed depositaries and only a small percentage (0.8%) per year are provided to the super-nodes (for running the networks that support the system), miners (for mining new blocks) and licensed depositories (for storing the precious metals). The Value Units emission process requires a party to purchase a quantity of precious metal from a licensed emitter. The precious metal is then transported to a licensed depositary which then certifies that the precious metals have been received. Finally the members of the VUF, by using their vShares approve the emission. In each emission an additional percentage of vUnits is emitted and distributed between the licensed emitter, licensed precious metal dealers, licensed certification authority and the Value Units Foundation Fund (VUFF). This fund is used for paying developers and members of the foundation that operate in the day to day operations that support the Value Units system. This rule as many other can be changed by the VUF in cooperation with the community (the starting rules for the distribution of vUnits in the emission process are found further down in this document under the description of the available blockchain parameters and their default values). The emission is the only process in the Value Units governance system that can occur without the consent of the community, but requires always the cooperation between a licensed emitter, a licensed depositary and 66% of the members of the VUF. The approval of new emitters/depositary and all other changes to the parameters in the blockchain are proposed by the VUF and vetted by the community.  
@@ -83,6 +85,7 @@ Value Units should be used as currency and as such we will take many measures to
 In the current cryptocurrency world all coins aren't equal, when coins are stolen the receiver addresses are informed to all relevant parties and they are capable of blocking or seizing coins from such sources. An innocent person may not be full aware if the received coins are marked as stolen or not. With the proposed functionality for private transactions or zero-knwowledge proof the origin of the vUnits can't be traced and they become fungible by definition.   
 
 <a name="network"/>
+
 ## Network
 
 The Value Units network will start with client-nodes and depending on the decision for the second major release, will either move to a blockchain with super-nodes or an hashgraph. To run a super-node, the users would need to store 1'000 vUnits as something akin to collateral, although unlike traditional collateral, the Value Units never leaves the user's possession and has no chance of being forfeited. It can be moved or spent at any time by the user - doing so simply removes the super-node from service and makes it ineligible to receive rewards.
@@ -102,6 +105,7 @@ Running the appropriate peer software and matching the requirement (static IP, 1
 Having a network of incentivized peers opens the possibility for further applications.  
 
 <a name="blockchain"/>
+
 ## Blockchain
 
 The Value Units system builds on top of existing concepts and technologies. In the Value Units Blockchain many parameters that are hard coded into other blockchains are variable and can change during the lifetime of the blockchain. These Value Parameters (vParameters) can be proposed by the VUF and approved by the community. Additionally the Bitcoin protocol includes a concept called scripts that can be used for "smart contracts". UTXO in Bitcoin can be owned not just by a public key, but also by a more complicated script expressed in a simple stack-based programming language. In this paradigm, a transaction spending that UTXO must provide data that satisfies the script. Indeed, even the basic public key ownership mechanism is implemented via a script: the script takes an elliptic curve signature as input, verifies it against the transaction and the address that owns the UTXO, and returns 1 if the verification is successful and 0 otherwise. Other, more complicated, scripts exist for various additional use cases. For example, one can construct a script that requires signatures from two out of a given three private keys to validate ("multi-sig"), a setup useful for corporate accounts, secure savings accounts and some merchant escrow situations. Scripts can also be used to pay bounties for solutions to computational problems, and one can even construct a script that says something like "this Bitcoin UTXO is yours if you can provide an SPV proof that you sent a Dogecoin transaction of this denomination to me", essentially allowing decentralized cross-cryptocurrency exchange [1602]. 
@@ -136,6 +140,7 @@ The VUF is responsible for publishing Guidelines, Procedures, Rules, Public Nota
 Should the Value Units Network replace the blockchain with an hashgraph in the future, the same instructions and transactions would be supported in the network and just the consensus algorithm and the way the data is stored will be changed.
 
 <a name="trusted-parties"/>
+
 ## Trusted Parties
 
 The Value Units ecosystem is based on several parties that need to be trusted and are audited before being accepted into the network. The LE's, LPMD's, LCA's and LD's request to be accepted into the network by following theses steps:
@@ -151,6 +156,7 @@ The Value Units ecosystem is based on several parties that need to be trusted an
 Once their audit has been approved by the community their public key is part of the blockchain and from that moment on they are capable of broadcasting the instructions related to their area of concern and signing them with their private key.
 
 <a name="addresses-and-certification"/>
+
 ## Addresses & Certification
 
 The Value Units system uses public addresses like most cryptocurrencies as recipient for payments. Due to privacy concern a new address should be used for each payment. To be able to delegating address generation to an untrusted peer we are using a similar approach as Bitcoin by implementing a deterministic wallet.  
@@ -166,6 +172,7 @@ When the Value Units user want to generate an address for receiving a payment, h
 The certification process is only required when generating payment addresses and can be  done beforehand. The user can also use the same identification key for many payment but then his privacy would be at risk. When spending the vUnits no involvment of the LCA is required. 
 
 <a name="voting"/>
+
 ## Voting
 
 The Value Units governance system provides several different instance where voting is required. VUF decisions are voted using vShares, community decisions are voted using the identity keys of each user. It's important to notice that to protect from vShares to double-vote, these vShares need to be unspent before the vote is casted. This means that new acquired vShares (during the voting period) are blocked from participating in the voting procedure.
@@ -193,6 +200,7 @@ In this case the users of  LCA 1 have casted more than 69.66%, so the vote of LC
 The blockchain provides a set of instructions that can be used for voting and are explained in detail in the Value Units Specification.
 
 <a name="value-units-foundation-fund"/>
+
 ## Value Units Foundation Fund (VUFF)
 
 The VUFF is used by the VUF to support their operation. The responsibilities of the Foundation include:
@@ -225,6 +233,7 @@ Whenever new vUnits are emitted, some additional vUnits are emitted and distribu
 The amount of vUnits that are received by the VUFF decreases when the total supply of vUnits increases.
 
 <a name="emission-price"/>
+
 ## Emission Price
 
 The rules for calculating the emission price are defined in the blockchain and they pursue the following goals:
@@ -263,6 +272,7 @@ Let's explain this using an example. There are 50'000'000 emitted vUnits with a 
 This algorithm will provide new supply when it's needed and giving space to some healthy flexibility at the start. The emission price will be calculated when the VUF finishes approving the emission, an the nodes in the network need to consider the official precious metals prices to approve or reject a block containing an emission.
 
 <a name="block-target-reward"/>
+
 ## Block Target and Reward
 
 The block target is set at 30 seconds and the block reward is 0.000000761% of all existing vUnits at that moment. 25% of the reward goes to all LD's distributed by the amount of precious metals they have in store until that moment, 75% is distributed to the miner that mined the block. Should vUnits move forward to introduce super-nodes in to the network then the 75% would be shared between all super-nodes (37.5%) and the miner (37.5).
@@ -270,6 +280,7 @@ The block target is set at 30 seconds and the block reward is 0.000000761% of al
 If the Value Units network moves to a hashgraph, the block reward could be removed altogether or replaced by another reward system.
 
 <a name="licensed-certification-authority"/>
+
 ## Licensed Certification Authority (LCA)
 
 The Licensed Certification Authority (LCA) is responsible for the identification of a subset of all users in the Value Units ecosystem. A company wishing to become a LCA requires to pay the cost of the audit by the VUF and needs to pass the audit and be approved by 66% of the community. The VUF defines for which countries the Certification Authority can issue certificates. It requires to fulfil the KYC (Know your customer) and AML (Anti-Money-Laundry) procedures defined by the VUF for each country which are communicated and published into the blockchain. The controls can include such things as the following [0408]:
@@ -287,6 +298,7 @@ Once a LA is suspended, all the identity addresses generated by that LCA aren't 
 Each payment transaction in the Value Units blockchain is signed by two private keys. The private key verified by the LCA and a self generated private key. The LCA is just capable of checking if they hold identity information for a particular address, but will not under any circumstance be capable of spending the vUnits assigned to that address. 
 
 <a name="licensed-emitter"/>
+
 ## Licensed Emitter (LE)
 
 The Licensed Emitter (LE) is responsible for initializing the process of Value Units emission. They are responsible of reaching agreements with precious metals dealers and organizing the transport to the depositaries. A company wishing to become an LE requires to pay the cost of the audit by the VUF and needs to pass the audit and be approved by 66% of the community.
@@ -300,6 +312,7 @@ To start an emission, the LE needs to specify the address of the LPMD and LD whe
 They are regularly audited by the VUF and if problems are found and not promptly corrected a suspension request is broadcasted into the blockchain, which needs to be approved by 66% of the community.  
 
 <a name="licensed-depositary"/>
+
 ## Licensed Depositary (LD)
 
 The Licensed Depositary (LD) is responsible for holding the precious metals. A company wishing to become a LD requires to pay the cost of the audit by the VUF and needs to pass the audit and be approved by 66% of the community. The VUF defines for which countries the LD can hold precious metals. The VUF defines the procedures for each country which are communicated and published into the blockchain. The LD's are responsible of receiving and returning precious metals based on requests that are broadcasted in the blockchain. All these procedures are part of the Value Units protocol.
@@ -309,6 +322,7 @@ These procedures are regularly audited by the VUF and if problems are found and 
 Once a LD is suspended, the VUF is responsible to find a solution regarding the precious metals that are being held in the LD.
 
 <a name="licensed-precious-metal-dealer"/>
+
 ## Licensed Precious Metal Dealer (LPMD)
 
 The Licensed Precious Metal Dealer (LPMD) is responsible for providing the precious metals that are used for emitting vUnits. A company wishing to become an LPMD requires to pay the cost of the audit by the VUF and needs to pass the audit and be approved by 66% of the community.
@@ -316,16 +330,19 @@ The Licensed Precious Metal Dealer (LPMD) is responsible for providing the preci
 They are regularly audited by the VUF and if problems are found and not promptly corrected a suspension request is broadcasted into the blockchain, which needs to be approved by 66% of the community.  
 
 <a name="identity-provider"/>
+
 ## Identity Provider
 
 The certificates that are used for identifying a user could be used in the future to extend the capabilities of the Value Units Blockchain as an Identity Provider. Additionally a user could have an agreement to pass his private information (KYC and AML) to a third party. Let's say that the user wants to trade Value Units on an exchange. Normally these exchanges require to perform a KYC after a certain amount of money has been deposited into the account. A user of the Value Units ecosystem would be capable of sending vUnits to the Exchange address and automatically request to add his personal information with the transfer. The exchange would receive everything in one package and can certify that the user is who he says he is and that the funds are really coming from his personal address.
 
 <a name="consensus-algorithm"/>
+
 ## Consensus Algorithm
 
 The consensus algorithm used by Value Units is PoW (Proof-of-Work) but the VUF expects to change to another consensus algorithm within 1-2 years.
 
 <a name="genesis-block"/>
+
 ## Genesis Block
 
 Normally cryptocurrencies mine their units and don't require a complicated procedure to issue them. Because the Value Units system is different, there needs to be a special setup in the genesis block and some special consensus rules for it, because of the following issue that would otherwise arrise:
@@ -341,6 +358,7 @@ With the registered parties a testphase (more on this on the roadmap) will be st
 The current version of Value Units uses a closed blockchain based on Peershares and has as of the 25.12.2017 a total circulation of 9'125'957.90 vUnits with a Value Basket that hold 13.647 Kg Gold and 255.996 Kg Silver. These holdings will be included into the Genesis Block.
 
 <a name="emission-destruction"/>
+
 ## Emission & Destruction 
 
 The following workflow describe an emission and destruction procedure.
@@ -364,6 +382,7 @@ The emission price is calculated when the emission is approved (see Emission Pri
 3. The LD can issue an invoice to the customer directly for the transport cost of the precious metals, once these are paid, the precious metals are dispatched and an UnitsDestructionConfirmed instruction reduces the stored amount of precious metals by the LD and officially destroys the vUnits.
 
 <a name="value-instructions"/>
+
 ## Value Instructions (vInstructions)
 
 All instructions that are used for the performing functionality in the blockchain are explained in more detail in the Value Units Specification.   
@@ -371,6 +390,7 @@ All instructions that are used for the performing functionality in the blockchai
 Instructions that can be executed more than once have a daily limit that need to be respected by the trusted parties. This is for avoiding misuse of the system by code bugs or hacks.
 
 <a name="value-parameters"/>
+
 ## Value Parameters (vParameters)
 
 The VUF (either by own initiative or by recommendation of the community) can recommend to change any of these parameters that are recorded in the blockchain. The following workflow is required to change a blockchain value parameter:
@@ -587,6 +607,7 @@ Following Value Parameters are part of the Value Units blockchain:
 **Maximal Percentage of Votes Originated From One LCA:** The maximal percentage of votes that can be casted from users of one specific LCA. (Default Value: 50%)
 
 <a name="roadmap"/>
+
 ## Roadmap
 
 Currently the VUF is working with several companies that have supported the Value Units project until now and there is a least one of each required trusted party that is implementing the protocols described on this whitepaper on their systems. So the planned roadmap is the following:
@@ -608,6 +629,7 @@ Start receiving applications to be a LE, LPMD, LD, LCA or miners.
 - Create a new roadmap based on the feedback of all involved parties.
 
 <a name="glossary"/>
+
 ## Glossary
 
 **LCA**: Licensed Certification Authority
@@ -624,6 +646,7 @@ Start receiving applications to be a LE, LPMD, LD, LCA or miners.
 **VUFF**: Value Units Foundation Fund
 
 <a name="references"/>
+
 ## References
 
 1. "Bitcoin: A Peer-to-Peer Electronic Cash System" [https://bitcoin.org/bitcoin.pdf](https://bitcoin.org/bitcoin.pdf) Retrieved 2017-12-16. [2350]
