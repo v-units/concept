@@ -3,7 +3,7 @@ Version 0.9 (04.01.2017)
 
 ## Pending Tasks
 
-- Add some graphics explaining better some concepts.
+- Add some graphics to explain better some concepts.
 
 ## Table of Contents
 
@@ -633,16 +633,27 @@ Start receiving applications to be a LE, LPMD, LD, LCA or miners.
 ## Glossary
 
 **LCA**: Licensed Certification Authority
+
 **LD**: Licensed Depositary
+
 **LCA**: Licensed Emitter
+
 **LPMD**: Licensed Precious Metal Dealer
+
 **vInstructions**: Value Instructions
+
 **vParameters**: Value Parameters
+
 **vUnits**: Value Units
+
 **vShares**: Value Shares
+
 **VB**: Value Basket
+
 **VBP**: Value Basket Price
+
 **VUF**: Value Units Foundation
+
 **VUFF**: Value Units Foundation Fund
 
 <a name="references"/>
